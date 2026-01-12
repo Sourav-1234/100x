@@ -76,6 +76,9 @@
 
  const crypto =require('crypto');
 
+//Note The Problem can be solved using the 00000 prefix by changing the inputStr acordingly
+
+
 
  function findHashWithPrefix(prefix){
      let input =0;
