@@ -1,0 +1,353 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    background: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Page Container */
+.page-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+/* Left Section - Dark Side */
+.left-section {
+    background: #000000;
+    padding: 4rem 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-content {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.logo-bars {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Main Heading */
+.main-heading {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+/* Features List */
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.feature-icon {
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+.feature-item span {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Trust Badge */
+.trust-badge {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 2rem;
+}
+
+/* Company Logos */
+.company-logos {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.logo-item {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-item.telekom {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.dot-grid {
+    font-size: 0.5rem;
+    line-height: 0.7;
+    letter-spacing: 0.1rem;
+}
+
+.telekom-text {
+    font-size: 0.75rem;
+    line-height: 1.2;
+}
+
+.salesforce-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cloud-icon {
+    font-size: 1.25rem;
+}
+
+/* Reviews */
+.reviews {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+}
+
+.stars {
+    color: #ffffff;
+    font-size: 1.125rem;
+    letter-spacing: 0.1rem;
+}
+
+.review-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+}
+
+/* Wave Decoration */
+.wave-decoration {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.05" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,144C960,149,1056,139,1152,128C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+    background-size: cover;
+    pointer-events: none;
+}
+
+/* Right Section - White Side */
+.right-section {
+    background: #ffffff;
+    padding: 4rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Form Title */
+.form-title {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+}
+
+.form-subtitle {
+    font-size: 0.95rem;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 3rem;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #000000;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    font-size: 0.95rem;
+    color: #000000;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-family: inherit;
+    transition: all 0.2s;
+}
+
+.form-input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #000000;
+}
+
+/* Next Button */
+.btn-next {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: #7c7c7c;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-next:hover {
+    background: #5c5c5c;
+}
+
+/* Progress Indicator */
+.progress-indicator {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.progress-bar {
+    width: 60px;
+    height: 4px;
+    background: #e0e0e0;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.progress-bar.active {
+    background: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .page-container {
+        grid-template-columns: 1fr;
+    }
+
+    .left-section {
+        padding: 3rem 2rem;
+    }
+
+    .right-section {
+        padding: 3rem 2rem;
+    }
+
+    .main-heading {
+        font-size: 2.5rem;
+    }
+
+    .company-logos {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-section {
+        padding: 2rem 1.5rem;
+    }
+
+    .right-section {
+        padding: 2rem 1.5rem;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .features-list {
+        margin-bottom: 3rem;
+    }
+
+    .company-logos {
+        gap: 1.5rem;
+    }
+
+    .form-title {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.125rem;
+    }
+
+    .main-heading {
+        font-size: 1.75rem;
+    }
+
+    .feature-item span {
+        font-size: 0.875rem;
+    }
+
+    .company-logos {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .form-title {
+        font-size: 1.5rem;
+    }
+}
